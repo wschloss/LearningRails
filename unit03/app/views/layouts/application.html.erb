@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Unit03</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<% flash.each do |name, value| %>
+<p><i><%= "#{name}: #{value}" %></i></p>
+<% end %>
+
+<h1>CSCI 100: Fun with Computers</h1>
+
+<%= yield %>
+
+<%= render 'shared/footer' %>
+
+</body>
+</html>
