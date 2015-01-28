@@ -9,4 +9,6 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Unit03::Application.config.secret_key_base = 'b8825b739cba7762f713ecc279f092caf8618449ae4c0a76e1917cffd922d9040c295c035bf2d030114d8b9a68525c8cf21eab180040000c897af5e0921952d3'
+
+# As suggested on Piazza
+Unit03::Application.config.secret_key_base = SecureRandom.hex(64)
