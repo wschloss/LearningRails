@@ -8,7 +8,7 @@
 #f = File.open("books.txt", "r")
 
 # Books seeding from part 1
-=begin
+
 f = File.open(File.join(Rails.root, 'db', 'books.txt'))
 f.each_line do |line|
   #get rid of newlines
@@ -18,7 +18,6 @@ f.each_line do |line|
   Book.create(title: arr[0], author: arr[1].strip!, language: arr[2].strip!, year: arr[3], copies: arr[4])  
 end
 f.close
-=end
 
 # Part 2 - Games seeding
 Game.create(name: "Resident Evil", price: 20, genre: "Horror")
