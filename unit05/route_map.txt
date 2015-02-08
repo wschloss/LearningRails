@@ -1,0 +1,76 @@
+Pages with associated links/buttons:
+
+console index - Links: show/edit/destroy, new console
+show console - Links: edit/back, game show/edit/destroy, new game
+edit console - Links: show/back, Button: update console
+new console - Links: back, Button: create console
+---
+show game - Links: edit/back
+edit game - Links: show/back, Button: update game
+new game - Links: back, Button: create game
+---
+
+ROUTES
+
+---
+
+console_games POST   /consoles/:console_id/games(.:format)          games#create
+FROM NEW GAME PAGE, ENTER VALID INFO AND CLICK CREATE
+@console = Console.find(params[:console_id])
+
+new_console_game GET    /consoles/:console_id/games/new(.:format)      games#new
+FROM THE TEAM SHOW PAGE, CLICK ON NEW GAME
+@console = Console.find(params[:console_id])
+@game = Game.new
+
+edit_console_game GET    /consoles/:console_id/games/:id/edit(.:format) games#edit
+FROM THE SHOW GAME, CLICK EDIT
+@console = Console.find(params[:console_id])
+@game = Game.find(params[:id])
+
+console_game GET    /consoles/:console_id/games/:id(.:format)      games#show
+FROM TEAM SHOW PAGE, CLICK SHOW NEXT TO A GAME LISTING
+@console = Console.find(params[:console_id])
+@game = Game.find(params[:id])
+
+PUT    /consoles/:console_id/games/:id(.:format)      games#update
+FROM EDIT GAME PAGE, CLICK UPDATE
+@console = Console.find(params[:console_id])
+@game = Game.find(params[:id])
+
+DELETE /consoles/:console_id/games/:id(.:format)      games#destroy
+FROM A CONSOLE INDEX PAGE, CLICK DESTROY NEXT TO A GAME LISTING
+@console = Console.find(params[:console_id])
+@game = Game.find(params[:id])
+
+consoles GET    /consoles(.:format)                            consoles#index
+FROM ROOT
+FROM SHOW CONSOLE, CLICK BACK
+FROM EDIT CONSOLE, CLICK BACK
+FROM NEW CONSOLE, CLICK BACK
+@console = Console.find(params[:console_id])
+
+POST   /consoles(.:format)                            consoles#create
+FROM NEW CONSOLE, CLICK CREATE
+@console = Console.new
+
+new_console GET    /consoles/new(.:format)                        consoles#new
+FROM CONSOLE INDEX, CLICK NEW
+@console = Console.new
+
+edit_console GET    /consoles/:id/edit(.:format)                   consoles#edit
+FROM INDEX, CLICK EDIT
+FROM SHOW CONSOLE, CLICK EDIT
+@console = Console.find(params[:console_id])
+
+console GET    /consoles/:id(.:format)                        consoles#show
+FROM CONSOLE INDEX, CLISK SHOW NEXT TO A CONSOLE
+@console = Console.find(params[:console_id])
+
+PUT    /consoles/:id(.:format)                        consoles#update
+FROM EDIT CONSOLE, CLICK UPDATE
+@console = Console.find(params[:console_id])
+
+DELETE /consoles/:id(.:format)                        consoles#destroy
+FROM CONSOLE INDEX, CLICK DELETE NEXT TO A CONSOLE
+@console = Console.find(params[:console_id])

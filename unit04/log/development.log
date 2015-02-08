@@ -543,3 +543,447 @@ Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.2ms)
   [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "games"[0m
   [1m[36mBook Load (0.4ms)[0m  [1mSELECT "books".* FROM "books"[0m
 SQLite3::SQLException: no such table: books: SELECT "books".* FROM "books"
+
+
+Started GET "/games/10" for 127.0.0.1 at 2015-02-03 09:34:48 -0700
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.0) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.0) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1609577629740968012__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.4ms)
+
+
+Started GET "/games/1" for 127.0.0.1 at 2015-02-03 09:34:49 -0700
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.0) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.0) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1609577629740968012__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.6ms)
+
+
+Started GET "/games/11" for 127.0.0.1 at 2015-02-03 09:34:49 -0700
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.0) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.0) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1609577629740968012__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2015-02-03 09:34:49 -0700
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.0) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.0) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1609577629740968012__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2015-02-03 09:34:50 -0700
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.0) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.0) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1609577629740968012__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.3ms)
+  [1m[36m (5.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (2.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateBooks (20150202194222)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "author" varchar(255), "language" varchar(255), "year" integer, "copies" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150202194222"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+Migrating to CreateGames (20150202223028)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "games" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "price" decimal(4,2), "genre" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150202223028"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.4ms)[0m  [1mINSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["author", "Charles Dickens"], ["copies", 200], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "English"], ["title", "A Tale of Two Cities"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1859]]
+  [1m[35m (5.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)  [["author", "J. R. R. Tolkien"], ["copies", 150], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "English"], ["title", "The Lord of the Rings"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1954]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["author", "Antoine de Saint-Exupery"], ["copies", 140], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "French"], ["title", "The Little Prince"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1943]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)  [["author", "Agatha Christie"], ["copies", 100], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "English"], ["title", "And Then There Were None"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1939]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["author", "Cao Xueqin"], ["copies", 100], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "Chinese"], ["title", "Dream of the Red Chamber"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1745]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)  [["author", "J. R. R. Tolkien"], ["copies", 100], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "English"], ["title", "The Hobbit"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1937]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["author", "H. Rider Haggard"], ["copies", 100], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "English"], ["title", "She: A History of Adventure"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1887]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)  [["author", "C. S. Lewis"], ["copies", 85], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "English"], ["title", "The Lion the Witch and the Wardrobe"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1950]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["author", "Dan Brown"], ["copies", 80], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "English"], ["title", "The Da Vinci Code"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 2003]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)  [["author", "Napoleon Hill"], ["copies", 70], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "English"], ["title", "Think and Grow Rich"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1937]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["author", "J. D. Salinger"], ["copies", 65], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "English"], ["title", "The Catcher in the Rye"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1951]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)  [["author", "Paulo Coelho"], ["copies", 65], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "Portuguese"], ["title", "The Alchemist"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1988]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["author", "Ellen G. White"], ["copies", 60], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "English"], ["title", "Steps to Christ"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1892]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)  [["author", "Vladimir Nabokov"], ["copies", 50], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "English"], ["title", "Lolita"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1955]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["author", "Johanna Spyri"], ["copies", 50], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "German"], ["title", "Heidi's Years of Wandering and Learning"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1880]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)  [["author", "Dr. Benjamin Spock"], ["copies", 50], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "English"], ["title", "The Common Sense Book of Baby and Child Care"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1946]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["author", "Lucy Maud Montgomery"], ["copies", 50], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "English"], ["title", "Anne of Green Gables"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1908]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)  [["author", "Anna Sewell"], ["copies", 50], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "English"], ["title", "Black Beauty: His Grooms and Companions: The autobiography of a horse"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1877]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["author", "Umberto Eco"], ["copies", 50], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "Italian"], ["title", "The Name of the Rose"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1980]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)  [["author", "Jack Higgins"], ["copies", 50], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "English"], ["title", "The Eagle Has Landed"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1975]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["author", "Richard Adams"], ["copies", 50], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "English"], ["title", "Watership Down"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1972]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)  [["author", "Shere Hite"], ["copies", 50], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "English"], ["title", "The Hite Report"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1976]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["author", "E.B. White"], ["copies", 50], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "English"], ["title", "Charlotte's Web"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1952]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)  [["author", "J. P. Donleavy"], ["copies", 50], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "English"], ["title", "The Ginger Man"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1955]]
+  [1m[36m (62.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["author", "Robert James Waller"], ["copies", 50], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "English"], ["title", "The Bridges of Madison County"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1991]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)  [["author", "Beatrix Potter"], ["copies", 45], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "English"], ["title", "The Tale of Peter Rabbit"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1902]]
+  [1m[36m (3.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["author", "J. K. Rowling"], ["copies", 44], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "English"], ["title", "Harry Potter and the Deathly Hallows"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 2007]]
+  [1m[35m (3.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)  [["author", "Richard Bach"], ["copies", 40], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "English"], ["title", "Jonathan Livingston Seagull"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1970]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["author", "Elbert Hubbard"], ["copies", 40], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "English"], ["title", "A Message to Garcia"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1899]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)  [["author", "Jostein Gaarder"], ["copies", 40], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "Norwegian"], ["title", "Sophie's World"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1991]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["author", "V. C. Andrews"], ["copies", 40], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "English"], ["title", "Flowers in the Attic"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1979]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)  [["author", "Dan Brown"], ["copies", 39], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "English"], ["title", "Angels & Demons"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 2000]]
+  [1m[36m (4.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["author", "Nikolai Ostrovsky"], ["copies", 36], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "Russian"], ["title", "How the Steel Was Tempered"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1932]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)  [["author", "Leo Tolstoy"], ["copies", 36], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "Russian"], ["title", "War and Peace"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1869]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["author", "Carlo Collodi"], ["copies", 35], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "Italian"], ["title", "The Adventures of Pinocchio"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1881]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)  [["author", "Louise Hay"], ["copies", 35], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "English"], ["title", "You Can Heal Your Life"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1984]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["author", "Wayne Dyer"], ["copies", 35], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "English"], ["title", "Your Erroneous Zones"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1976]]
+  [1m[35m (7.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)  [["author", "Hal Lindsey & C. C. Carlson"], ["copies", 35], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "English"], ["title", "The Late Great Planet Earth"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1970]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["author", "Jeffrey Archer"], ["copies", 34], ["created_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["language", "English"], ["title", "Kane and Abel"], ["updated_at", Tue, 03 Feb 2015 16:35:05 UTC +00:00], ["year", 1979]]
+  [1m[35m (18.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)  [["author", "Charles M. Sheldon"], ["copies", 30], ["created_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00], ["language", "English"], ["title", "In His Steps: What Would Jesus Do?"], ["updated_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00], ["year", 1896]]
+  [1m[36m (7.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["author", "Harper Lee"], ["copies", 30], ["created_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00], ["language", "English"], ["title", "To Kill a Mockingbird"], ["updated_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00], ["year", 1960]]
+  [1m[35m (4.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)  [["author", "Jacqueline Susann"], ["copies", 30], ["created_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00], ["language", "English"], ["title", "Valley of the Dolls"], ["updated_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00], ["year", 1966]]
+  [1m[36m (9.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["author", "Margaret Mitchell"], ["copies", 30], ["created_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00], ["language", "English"], ["title", "Gone with the Wind"], ["updated_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00], ["year", 1936]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)  [["author", "Anne Frank"], ["copies", 30], ["created_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00], ["language", "Dutch"], ["title", "The Diary of a Young Girl"], ["updated_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00], ["year", 1947]]
+  [1m[36m (5.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["author", "Gabriel Garcia Marquez"], ["copies", 30], ["created_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00], ["language", "Spanish"], ["title", "One Hundred Years of Solitude"], ["updated_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00], ["year", 1967]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)  [["author", "Rick Warren"], ["copies", 30], ["created_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00], ["language", "English"], ["title", "The Purpose Driven Life"], ["updated_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00], ["year", 2002]]
+  [1m[36m (5.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["author", "Colleen McCullough"], ["copies", 30], ["created_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00], ["language", "English"], ["title", "The Thorn Birds"], ["updated_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00], ["year", 1977]]
+  [1m[35m (5.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)  [["author", "William Bradford Huie"], ["copies", 30], ["created_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00], ["language", "English"], ["title", "The Revolt of Mamie Stover"], ["updated_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00], ["year", 1951]]
+  [1m[36m (11.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["author", "Stieg Larsson"], ["copies", 30], ["created_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00], ["language", "Swedish"], ["title", "The Girl with the Dragon Tattoo"], ["updated_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00], ["year", 2005]]
+  [1m[35m (15.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "books" ("author", "copies", "created_at", "language", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)  [["author", "Eric Carle"], ["copies", 30], ["created_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00], ["language", "English"], ["title", "The Very Hungry Caterpillar"], ["updated_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00], ["year", 1969]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "games" ("created_at", "genre", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00], ["genre", "Horror"], ["name", "Resident Evil"], ["price", #<BigDecimal:7f7fc2cc88e8,'0.2E2',9(36)>], ["updated_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "games" ("created_at", "genre", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00], ["genre", "Platformer"], ["name", "Super Mario Bros"], ["price", #<BigDecimal:7f7fc2cdfd90,'0.5E1',9(36)>], ["updated_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "games" ("created_at", "genre", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00], ["genre", "Horror"], ["name", "Outlast"], ["price", #<BigDecimal:7f7fc2ce5f88,'0.15E2',9(36)>], ["updated_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "games" ("created_at", "genre", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00], ["genre", "Fighter"], ["name", "Super Smash Bros"], ["price", #<BigDecimal:7f7fc2cec130,'0.6E2',9(36)>], ["updated_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00]]
+  [1m[36m (4.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "games" ("created_at", "genre", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00], ["genre", "Adventure"], ["name", "The Order"], ["price", #<BigDecimal:7f7fc2cfe2b8,'0.6E2',9(36)>], ["updated_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00]]
+  [1m[35m (10.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "games" ("created_at", "genre", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00], ["genre", "Adventure"], ["name", "Bloodborne"], ["price", #<BigDecimal:7f7fc2d04460,'0.6E2',9(36)>], ["updated_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00]]
+  [1m[36m (16.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "games" ("created_at", "genre", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00], ["genre", "RPG"], ["name", "Final Fantasy"], ["price", #<BigDecimal:7f7fc2d165e8,'0.4E2',9(36)>], ["updated_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00]]
+  [1m[35m (8.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "games" ("created_at", "genre", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00], ["genre", "Adventure"], ["name", "Grim Fandango"], ["price", #<BigDecimal:7f7fc2d1c790,'0.15E2',9(36)>], ["updated_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00]]
+  [1m[36m (6.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "games" ("created_at", "genre", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00], ["genre", "Shooter"], ["name", "Call of Duty"], ["price", #<BigDecimal:7f7fc2d2e918,'0.6E2',9(36)>], ["updated_at", Tue, 03 Feb 2015 16:35:06 UTC +00:00]]
+  [1m[35m (23.6ms)[0m  commit transaction
+
+
+Started GET "/games" for 127.0.0.1 at 2015-02-03 09:35:11 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GamesController#index as HTML
+  [1m[35mGame Load (0.2ms)[0m  SELECT "games".* FROM "games"
+  Rendered games/index.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 186ms (Views: 160.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 09:35:11 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 09:35:11 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-02-03 09:35:11 -0700
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2015-02-03 09:35:11 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 09:35:11 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 09:35:11 -0700
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2015-02-03 09:35:11 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 09:35:11 -0700
+
+
+Started GET "/games/3" for 127.0.0.1 at 2015-02-03 09:35:14 -0700
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGame Load (0.2ms)[0m  [1mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered games/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 41ms (Views: 38.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2015-02-03 09:35:16 -0700
+Processing by GamesController#index as HTML
+  [1m[35mGame Load (0.2ms)[0m  SELECT "games".* FROM "games"
+  Rendered games/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.2ms)

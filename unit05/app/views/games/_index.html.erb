@@ -1,0 +1,38 @@
+<h1>Listing games</h1>
+<% if @games.empty? %>
+  <p><i>There are no games yet</i></p>
+<% else %>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Genre</th>
+        <th>Release Year</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @games.each do |game| %>
+        <tr>
+          <td><%= game.name %></td>
+          <td><%= game.price %></td>
+          <td><%= game.genre %></td>
+          <td><%= game.release_year %></td>
+          <td><%= link_to 'Show', [@console, game] %></td>
+          <td><%= link_to 'Edit', edit_console_game_path(@console, game) %></td>
+          <td><%= link_to 'Destroy', [@console, game], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+<% end %>
+
+<br>
+
+<%= link_to 'New Game', new_console_game_path(@console) %>
