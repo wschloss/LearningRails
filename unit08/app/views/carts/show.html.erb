@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pet Type</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cart.selected_pets.each do |selected_pet| %>
+      <tr>
+        <td><%= selected_pet.pet.pet_type %></td>
+        <td><%= selected_pet.pet.name %></td>
+        <td><%= selected_pet.pet.age %></td>
+        <td><%= selected_pet.pet.description %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= button_to 'Empty Cart', @cart, method: :delete, data: { confirm: 'Are you sure?' } %>
+<br>
+<%= link_to 'Back to shelter index', shelter_index_url %>

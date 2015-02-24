@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing pets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pet Type</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pets.each do |pet| %>
+      <tr>
+        <td><%= pet.pet_type %></td>
+        <td><%= pet.name %></td>
+        <td><%= pet.age %></td>
+        <td><%= pet.description %></td>
+        <td><%= button_to 'Select Pet', selected_pets_path(pet_id: pet) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
