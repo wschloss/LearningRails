@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Unit10</title>
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag params[:controller] %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= render 'header' %>
+
+<div id="content"><%= content_for?(:content) ? yield(:content) : yield %></div>
+
+<%= render 'footer' %>
+
+</body>
+</html>

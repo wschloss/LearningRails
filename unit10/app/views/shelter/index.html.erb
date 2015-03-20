@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Pets for Adoption</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pet Type</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Description</th>
+      <th>Picture</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody id="petlist">
+    <% @pets.each do |pet| %>
+      <%= render pet %>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
